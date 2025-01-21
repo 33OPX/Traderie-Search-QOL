@@ -1,0 +1,33 @@
+/* Custom styles for the sidebar */
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 100vh;
+  background: #181414;
+  color: #ffffff;
+  padding: 10px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+#sidebar h3 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #fff;
+}
+
+#sidebar button {
+  width: calc(100% - 30px);
+  padding: 8px;
+  margin-bottom: 10px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+#sidebar button:hover {
+  background-color: #555;
+}
