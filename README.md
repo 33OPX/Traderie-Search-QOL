@@ -39,6 +39,7 @@ Once you click the button, the URL will update to include the **`prop_*`** param
 
 ### Step 3: Adding the Affix and ID to the plugin
 Now, just enter the Affix name (Whatever you want it to be) and the ID and it will be added to the list.
+
 ![Prop_ID](https://i.imgur.com/rJCaNvD.png)
 
 ### Step 4: Drag n Drop organization
