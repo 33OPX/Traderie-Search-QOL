@@ -31,10 +31,12 @@ A tool designed to enhance your experience on the Traderie website, making it ea
 
 ### Step 1: Update Affix and Minimum Value
 Click the **"Update URL"** button after selecting the affix you want to filter by and specifying the minimum value you’d like to apply.
+
 ![Apply Filters](https://i.imgur.com/hKapwjm.png)
 
 ### Step 2: View the Updated URL with Filters
 Once you click the button, the URL will update to include the **`prop_*`** parameter, where `*` is your affix's property ID and the minimum value you set. 
+
 ![Prop_ID](https://i.imgur.com/kXRhawE.png)
 
 ### Step 3: Adding the Affix and ID to the plugin
