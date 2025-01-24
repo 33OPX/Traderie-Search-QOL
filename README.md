@@ -1,71 +1,58 @@
-# Traderie Search QOL
+# Traderie Search QOL 2.0
 
-This tool enhances the Traderie website's search functionality by allowing users to filter item listings based on affix values (e.g., Resistances, Life, Mana) directly within the URL.
-
-## Quick Guide to Install on Chrome
-
-1. **Download and Extract the Script**:
-   - Download or clone this repository to your local machine.
-   
-2. **Enable Developer Mode**:
-   - Open Chrome and navigate to `chrome://extensions/`.
-   - Toggle the "Developer mode" switch in the top-right corner.
-
-3. **Load the Script**:
-   - Click on "Load unpacked" and select the folder where you downloaded or extracted the script files.
-
-4. **Visit Traderie**:
-   - Once the extension is installed, visit any item page on Traderie (e.g., a Grand Charm page: [Example Item Page](https://traderie.com/diablo2resurrected/product/3779798752)).
-
----
-
-## How It Works
-
-1. **Navigate to the Item Page**:
-   - Use Traderie’s search bar at the top of the page.
-   - Search for an item (e.g., "Grand Charm").
-   - Click on the desired item to go to its specific product page (e.g., [Grand Charm Page](https://traderie.com/diablo2resurrected/product/3779798752)).
-
-2. **Enter Desired Affix Values**:
-   - In the tool's sidebar, input the desired number (e.g., 10) for each affix you want to filter by (e.g., Life, Resistances, Mana).
-
-3. **Select Affixes**:
-   - Click on the buttons for the affixes (e.g., "All Resistances", "Life", "Mana", etc.) that you want to apply to your search. This action will instantly update the URL to reflect the selected affix values.
-
-4. **Update the URL**:
-   - After clicking the affix buttons, the URL will automatically update without refreshing the page.
-   - To apply the changes, click on the URL bar in your browser and press Enter. This will reload the page with the updated affix filter parameters.
-   - **Note**: Refreshing the page will reset the filters. A reset button will be added in a future update.
-
----
+A tool designed to enhance your experience on the Traderie website, making it easier to search and manage Diablo II item listings. It provides features such as dynamic affix management, drag-and-drop sorting, and automatic ID insertion for enhanced efficiency.
 
 ## Features
 
-- **Ladder / Non-Ladder Mode**: Switch between ladder and non-ladder search criteria using buttons.
-- **Affix Filters**: Filter search results by various affixes, such as Life, Mana, Resistances, and more.
-- **Dynamic URL Updates**: The selected affix values are instantly added to the URL to narrow down item listings.
+- **Dynamic Affix Management**: The tool automatically captures affixes and their property IDs from the website.
+- **Drag-and-Drop Functionality**: Easily sort your affix list to organize it according to your preferences.
+- **Custom Affix Addition**: Add your own affixes by entering their name and ID through an intuitive input box.
+- **JavaScript-based**: Built with pure JavaScript for flexibility and compatibility.
+- **Chrome Extension-ready**: The tool is designed to be used as a Chrome extension for seamless integration.
 
----
+## Installation
 
-## How to Use
+### Option 1: Using as a Chrome Extension
 
-1. **Search for Your Item**:
-   - Use the Traderie search bar to find the item you're interested in (e.g., "Grand Charm").
-   - Go to the item's specific page on Traderie.
+1. Download or clone this repository to your local machine.
+2. Open the Chrome browser and go to `chrome://extensions/`.
+3. Enable **Developer mode** by toggling the switch in the top right corner.
+4. Click on **Load unpacked** and select the folder containing the downloaded files.
+5. The Traderie Search QOL tool should now appear as an extension in your Chrome toolbar.
 
-2. **Run the Script**:
-   - Once on the item page, the sidebar will appear with buttons for affixes and filters.
+## Usage
 
-3. **Customize Your Search**:
-   - Input your desired affix values (e.g., set "Life" to 10) and click the buttons for the affixes you want to apply.
+- **Affix List**: The tool will automatically populate a list of known affixes, which you can organize by dragging and dropping them into your preferred order.
+- **Add Custom Affix**: Use the input box at the top of the sidebar to enter the name and ID of an affix you want to add.
+- **Sorting**: Affixes can be manually sorted by clicking and dragging them into the desired order.
 
-4. **Update the URL**:
-   - Once you're done selecting affixes, click the URL bar and press Enter to apply the filters and update your search.
 
----
+## How to Update the URL with Your Affix Filters
 
-## Notes
+### Step 1: Update Affix and Minimum Value
+Click the **"Update URL"** button after selecting the affix you want to filter by and specifying the minimum value you’d like to apply.
+![Apply Filters](https://i.imgur.com/hKapwjm.png)
+**Screenshot 1:**
+- Highlight the button to click for updating the URL.
+- Show the affix selected and the minimum value input.
 
-- Clicking an affix button instantly adds the selected value to the URL for easy filtering of item listings.
-- The script dynamically updates the search parameters in the URL, allowing you to refine your search by specific item attributes (e.g., Life, Mana, Resistances).
-- **Refreshing the page will reset the filters**. A reset button will be added in a future update.
+### Step 2: View the Updated URL with Filters
+Once you click the button, the URL will update to include the **`prop_*`** parameter, where `*` is your affix's property ID and the minimum value you set. 
+![Prop_ID](https://i.imgur.com/kXRhawE.png)
+**Screenshot 2:**
+- Highlight the part of the URL where the `prop_*` and minimum value are applied.
+- Make sure the `*` symbol represents the unique ID of your selected affix.
+
+
+## Contributing
+
+Feel free to fork this repository, create a new branch, and submit a pull request with your improvements. We welcome suggestions and contributions to further enhance the functionality of this tool.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Thanks to the Diablo II community for their continuous support and feedback.
+- Inspired by tools such as "Path of Exile Trade - Fuzzy Search" for better search functionalities.
