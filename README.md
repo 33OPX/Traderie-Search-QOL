@@ -37,8 +37,13 @@ Click the **"Update URL"** button after selecting the affix you want to filter b
 ### Step 2: View the Updated URL with Filters
 Once you click the button, the URL will update to include the **`prop_*`** parameter, where `*` is your affix's property ID and the minimum value you set. 
 ![Prop_ID](https://i.imgur.com/kXRhawE.png)
+https://i.imgur.com/rJCaNvD.png
 
-
+### Step 3: Adding the Affix and ID to the plugin
+Now, just enter the Affix name (Whatever you want it to be) and the ID and it will be added to the list.
+![Prop_ID](https://i.imgur.com/rJCaNvD.png)
+### Step 4: Drag n Drop organization
+After that, you can drag the Affixes wherever you would like to completely customize the list for you. Enjoy!
 
 ## Contributing
 
