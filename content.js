@@ -228,9 +228,27 @@ function createAffixButtons() {
       button.style.flex = "1";
       button.style.padding = "8px";
       button.style.marginLeft = "10px";
-      button.onclick = () => modifyUrl(affix.id, 10);
+
+      // Create an input field for the custom number
+      const numberInput = document.createElement("input");
+      numberInput.type = "number";
+      numberInput.placeholder = "Value";
+      numberInput.style.width = "60px";
+      numberInput.style.marginLeft = "10px";
+      numberInput.style.padding = "5px";
+
+      // Update the button's onclick event to use the input value
+      button.onclick = () => {
+        const value = numberInput.value.trim();
+        if (value === "" || isNaN(value)) {
+          alert("Please enter a valid number.");
+          return;
+        }
+        modifyUrl(affix.id, parseInt(value, 10));
+      };
 
       affixItem.appendChild(button);
+      affixItem.appendChild(numberInput); // Add the input field to the affix item
       affixListContainer.appendChild(affixItem);
     });
   }
